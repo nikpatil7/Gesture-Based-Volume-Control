@@ -23,8 +23,7 @@ This project uses a webcam to detect hand gestures and control the system volume
 - [Setup](#setup)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## ⚙️ Setup
 

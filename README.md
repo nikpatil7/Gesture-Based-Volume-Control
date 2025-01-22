@@ -37,8 +37,8 @@ This project uses a webcam to detect hand gestures and control the system volume
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd gesture-based-volume-control
+   git clone https://github.com/nikpatil7/Gesture-Based-Volume-Control.git
+   cd Gesture-Based-Volume-Control
    ```
 
 2. **Install Python dependencies**:

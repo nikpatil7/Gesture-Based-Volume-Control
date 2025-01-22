@@ -1,33 +1,75 @@
-# Python Hand Tracking and Audio Control
+# Hand Volume Control
 
-This project utilizes OpenCV and MediaPipe to implement hand tracking and audio control functionalities. It processes video frames from the webcam to detect hand landmarks and adjusts the system volume based on hand gestures.
+This project uses a webcam to detect hand gestures and control the system volume based on the distance between the thumb and index finger. It features a real-time volume bar that updates as you adjust the volume with your hand.
 
-## Installation
+## Features
 
-To run this project, you need to install the required dependencies. You can do this by running:
+- Real-time hand gesture detection using MediaPipe
+- Volume control using Pycaw
+- Web-based interface with a real-time volume bar
+- WebSocket communication for real-time updates
 
-```bash
-pip install -r requirements.txt
-```
+## Setup
 
-## Usage
+### Prerequisites
 
-1. Ensure your webcam is connected and accessible.
-2. Run the main application:
+- Python 3.x
+- Node.js
+- A webcam
 
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd gesture-based-volume-control
+   ```
+
+2. **Install Python dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Install Node.js dependencies**:
+   ```bash
+   cd backend
+   npm install
+   ```
+
+### Running the Application
+
+1. **Start the Node.js server**:
+   ```bash
+   npm start
+   ```
+
+2. **Run the Python script**:
    ```bash
    python main.py
    ```
 
-3. Follow the on-screen instructions to use hand gestures for controlling the audio volume.
+3. **Access the web interface**:
+   Open your web browser and go to `http://localhost:3000`.
+
+## Usage
+
+- Ensure your webcam is connected.
+- Use your hand to control the volume by adjusting the distance between your thumb and index finger.
+- The volume bar on the web interface will update in real-time to reflect the current volume level.
 
 ## Dependencies
 
-This project requires the following Python packages:
+### Python
 
 - OpenCV
 - MediaPipe
 - NumPy
 - Pycaw
+- Requests
 
-You can find the complete list of dependencies in the `requirements.txt` file.
+### Node.js
+
+- Express
+- WS (WebSocket)
+
+You can find the complete list of dependencies in the `requirements.txt` and `package.json` files.

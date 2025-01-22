@@ -1,15 +1,32 @@
-# Hand Volume Control
+# 🚀 Hand Volume Control
+
+
 
 This project uses a webcam to detect hand gestures and control the system volume based on the distance between the thumb and index finger. It features a real-time volume bar that updates as you adjust the volume with your hand.
 
-## Features
+## 🌟 Features
 
-- Real-time hand gesture detection using MediaPipe
-- Volume control using Pycaw
-- Web-based interface with a real-time volume bar
-- WebSocket communication for real-time updates
+- 🎥 Real-time hand gesture detection using MediaPipe
+- 🔊 Volume control using Pycaw
+- 🌐 Web-based interface with a real-time volume bar
+- 📡 WebSocket communication for real-time updates
 
-## Setup
+## 📸 Demo
+
+![Demo Image 1](/assets/Demo1.png)
+![Demo Image 2](/assets/Demo2.png)
+![Demo Image 3](/assets/Demo3.png)
+![Demo Image 4](/assets/Demo4.png)
+
+## 📚 Table of Contents
+
+- [Setup](#setup)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [License](#license)
+
+## ⚙️ Setup
 
 ### Prerequisites
 
@@ -51,13 +68,13 @@ This project uses a webcam to detect hand gestures and control the system volume
 3. **Access the web interface**:
    Open your web browser and go to `http://localhost:3000`.
 
-## Usage
+## 🎮 Usage
 
 - Ensure your webcam is connected.
 - Use your hand to control the volume by adjusting the distance between your thumb and index finger.
 - The volume bar on the web interface will update in real-time to reflect the current volume level.
 
-## Dependencies
+## 📦 Dependencies
 
 ### Python
 
@@ -73,3 +90,4 @@ This project uses a webcam to detect hand gestures and control the system volume
 - WS (WebSocket)
 
 You can find the complete list of dependencies in the `requirements.txt` and `package.json` files.
+

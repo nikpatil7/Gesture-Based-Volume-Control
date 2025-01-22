@@ -5,6 +5,7 @@ import numpy as np
 from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
+import requests
 
 mpHands = mp.solutions.hands
 hands = mpHands.Hands(
@@ -50,6 +51,13 @@ while True:
         volume.SetMasterVolumeLevelScalar(volume_level / 100, None)
         volume_text = f"Volume: {int(volume_level)}%"
         cv2.putText(frame, volume_text, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+
+        # Send volume data to the server
+        try:
+            print(f"Sending volume data: {int(volume_level)}")  # Debugging line
+            requests.post('http://localhost:3000/volume', json={'volume': int(volume_level)})
+        except requests.exceptions.RequestException as e:
+            print(f"Error sending volume data: {e}")
 
     cv2.imshow('Image', frame)
     if cv2.waitKey(1) & 0xff == ord('q'):
